@@ -220,3 +220,17 @@ include_directories(
 add_message_files(FILES Information.msg)
 
 generate_messages(DEPENDENCIES std_msgs)
+
+add_executable(Information_publisher src/Information_publisher.cpp)
+
+target_link_libraries(Information_publisher ${catkin_LIBRARIES})
+
+add_dependencies(Information_publisher ${PROJECT_NAME}_generate_messages_cpp)
+
+
+add_executable(Information_subscriber src/Information_subscriber.cpp)
+
+target_link_libraries(Information_subscriber ${catkin_LIBRARIES})
+
+add_dependencies(Information_subscriber ${PROJECT_NAME}_generate_messages_cpp)
+
