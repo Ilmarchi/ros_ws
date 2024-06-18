@@ -1,0 +1,3 @@
+string company
+
+string city
