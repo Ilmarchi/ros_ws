@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/dofbot/ros_ws/devel/setup.sh
+    local-name: /home/dofbot/ros_ws/ros_ws/devel/setup.sh
