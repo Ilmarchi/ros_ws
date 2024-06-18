@@ -207,20 +207,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-
-# add_executable(turtle_velocity_publisher src/turtle_velocity_publisher.cpp)
-
-# target_link_libraries(turtle_velocity_publisher ${catkin_LIBRARIES})
-
-
-# add_executable(turtle_pose_subscriber src/turtle_pose_subscriber.cpp)
-
-# target_link_libraries(turtle_pose_subscriber ${catkin_LIBRARIES})
-
-add_message_files(FILES Information.msg)
-
-generate_messages(DEPENDENCIES std_msgs)
-
 add_executable(Information_publisher src/Information_publisher.cpp)
 
 target_link_libraries(Information_publisher ${catkin_LIBRARIES})
