@@ -216,3 +216,7 @@ target_link_libraries(turtle_velocity_publisher ${catkin_LIBRARIES})
 add_executable(turtle_pose_subscriber src/turtle_pose_subscriber.cpp)
 
 target_link_libraries(turtle_pose_subscriber ${catkin_LIBRARIES})
+
+add_message_files(FILES Information.msg)
+
+generate_messages(DEPENDENCIES std_msgs)
