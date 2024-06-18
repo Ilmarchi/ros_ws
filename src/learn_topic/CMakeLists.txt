@@ -208,14 +208,14 @@ include_directories(
 # catkin_add_nosetests(test)
 
 
-add_executable(turtle_velocity_publisher src/turtle_velocity_publisher.cpp)
+# add_executable(turtle_velocity_publisher src/turtle_velocity_publisher.cpp)
 
-target_link_libraries(turtle_velocity_publisher ${catkin_LIBRARIES})
+# target_link_libraries(turtle_velocity_publisher ${catkin_LIBRARIES})
 
 
-add_executable(turtle_pose_subscriber src/turtle_pose_subscriber.cpp)
+# add_executable(turtle_pose_subscriber src/turtle_pose_subscriber.cpp)
 
-target_link_libraries(turtle_pose_subscriber ${catkin_LIBRARIES})
+# target_link_libraries(turtle_pose_subscriber ${catkin_LIBRARIES})
 
 add_message_files(FILES Information.msg)
 
